@@ -1,4 +1,4 @@
-function BMI(weight, height ){
+function BMI(weight = 3, height = 3 ){
 
 let result = weight / (height * height)
 
@@ -6,17 +6,21 @@ return  result ;
 
 } 
 
-console.log(BMI(1 , 1))
+console.log(BMI(weight  , height ))
 
 function Status (bmi){
 
     if ( bmi < 18.5){
 
+    
         return `وزنك نقص`
+
+   
 
     } else if ( bmi >=18.5 && bmi < 25){
 
         return`وزنك صحي`
+        
     } else if( bmi >=25){
 
         return`لديك زيادة في الوزن ` 
